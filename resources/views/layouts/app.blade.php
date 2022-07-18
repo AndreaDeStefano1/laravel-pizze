@@ -17,13 +17,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     {{-- JAVASCRIPT --}}
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/admin/backend.js') }}" defer></script>
 
     {{-- fontaweson --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -48,16 +48,7 @@
                 <a class="navbar-brand" href="{{ route('admin.ingredients.create') }}">
                     Crea nuovo ingrediente
                 </a>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
+
 
                 {{-- <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
